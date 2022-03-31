@@ -1,6 +1,6 @@
 import Modal from "../../UI/Modal";
-import BTcarosuel from "./BTcarousel";
 import classes from "./Details.module.css";
+import BTcarosuel from "./BTcarousel";
 
 const Details = (props) => {
   const price = `$${props.price.toFixed(2)}`;
@@ -13,6 +13,7 @@ const Details = (props) => {
       
       <div className={classes.description}> {props.description} </div>
       <div className={classes.price}> {price} </div>
+      <div  className={classes['main-image']}> <BTcarosuel /> </div>
       <div className={classes.actions}>
         <button
           className={classes["button--alt"]}
