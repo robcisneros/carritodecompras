@@ -1,8 +1,7 @@
 import classes from "./MealItem.module.css";
 import MealItemForm from "./MealItemForm";
 import CartContext from "../../../store/cart-context";
-import React, { useContext } from "react";
-import { useState } from "react/cjs/react.development";
+import React, { useContext, useState } from "react";
 import Details from "./Details";
 
 const MealItem = (props) => {
